@@ -12,24 +12,27 @@
     
 </head>
 <body>
-    <header>
+    <header class="global-header">
         <nav class="navbar" aria-label="Hovedmeny"> <!--les deg opp på aria-label-->
 
-            <!-- Logo -->
-            <a href="index.html" class="nav-logo">Logo</a>
-            
-            <!-- Navigasjonslenker -->
-            <ul class="nav-links">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
-                <li><a href="index.html#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
-                <li><a href="#kontakt">Kontakt oss</a></li> <!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
-            </ul>
             <!-- Søkeboks -->
             <form action="#" method="get" class="search-box">
                 <input type="text" name="search" placeholder="Søk...">
                 <button type="submit" aria-label="Søk"><i class="fas fa-search"></i></button>
             </form>
+            
+            
+                           
+            <!-- Navigasjonslenker -->
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
+                <!-- Logo -->
+                <li class="logo"><a href="index.html" class="nav-logo">Logo</a></li>
+                <li><a href="index.html#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
+                <li><a href="#kontakt">Kontakt oss</a></li> <!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+            </ul>
+
             <!-- Ikoner -->
             <ul class="nav-icons">
                 <li><a href="#" aria-label="Profil"><i class="fas fa-user"></i></a></li>
@@ -53,12 +56,12 @@
             <!-- Produktbilder -->
             <section class="produkt-bilder">
                 <figure class="stort-bilde">
-                    <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde (stort produktbilde)-->
+                    <img src="images/stortproduktbilde-prodksiden.jpg" alt="stort produktbilde"><!--Husk å legge til bilde (stort produktbilde)-->
                 </figure>
                 <ul class="små-bilder">
-                    <li><img src="https://picsum.photos/200/300" alt=""></li><!--Husk å legge til bilde (lite produktbilde)-->
-                    <li><img src="https://picsum.photos/200/300" alt=""></li><!--Husk å legge til bilde (lite produktbilde)-->
-                    <li><img src="https://picsum.photos/200/300" alt=""></li><!--Husk å legge til bilde (lite produktbilde)-->
+                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="lite produktbilde"></li><!--Husk å legge til bilde (lite produktbilde)-->
+                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="lite produktbilde"></li><!--Husk å legge til bilde (lite produktbilde)-->
+                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="lite produktbilde"></li><!--Husk å legge til bilde (lite produktbilde)-->
                 </ul>
             </section>
             <!-- Produktinformasjon -->
@@ -96,7 +99,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis metus in orci lobortis convallis. Morbi rhoncus, urna vel ultrices condimentum, felis libero vulputate velit, non iaculis felis arcu a felis. Fusce tincidunt accumsan quam, vel porttitor magna varius eu. Quisque sodales laoreet nulla.</p>
                 </details>
                 <details>
-                    <summary></i>Størrelsestabell<i class="fa-solid fa-plus"></i></summary>
+                    <summary>Størrelsestabell<i class="fa-solid fa-plus"></i></summary>
                     <table>
                         <thead>
                             <tr>
@@ -172,7 +175,7 @@
             <div id="slider">
                 <div class="slides-produkt-liste">
                     <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                         <a href="#"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
@@ -188,7 +191,7 @@
                         </p>
                     </article>
                     <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                         <a href="#"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
@@ -204,7 +207,7 @@
                         </p>
                     </article>
                     <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                         <a href="#"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
@@ -220,7 +223,7 @@
                         </p>
                     </article>
                     <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                         <a href="#"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
@@ -236,7 +239,7 @@
                         </p>
                     </article>
                     <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                         <a href="#"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
@@ -252,7 +255,7 @@
                         </p>
                     </article>
                     <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                         <a href="#"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
