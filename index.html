@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksamen2024</title>
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" >
+    <link href="ikoner/css/brands.css" rel="stylesheet" >
+    <link href="ikoner/css/solid.css" rel="stylesheet" >
+    <link href="ikoner/css/regular.css" rel="stylesheet" >
+    <link rel="stylesheet" href="CSS/style.css"> 
+    
+</head>
+<body>
+    <header class="global-header">
+        <nav class="navbar" aria-label="Hovedmeny"> <!--les deg opp på aria-label-->
+
+            <!-- Søkeboks -->
+            <form action="#" method="get" class="search-box">
+                <input type="text" name="search" placeholder="Søk...">
+                <button type="submit" aria-label="Søk"><i class="fas fa-search"></i></button>
+            </form>
+            
+            
+                           
+            <!-- Navigasjonslenker -->
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
+                <!-- Logo -->
+                <li class="logo"><a href="index.html" class="nav-logo">Logo</a></li>
+                <li><a href="#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
+                <li><a href="#kontakt">Kontakt oss</a></li> <!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+            </ul>
+
+            <!-- Ikoner -->
+            <ul class="nav-icons">
+                <li><a href="#" aria-label="Profil"><i class="fas fa-user"></i></a></li>
+                <li><a href="#" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a></li>
+                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li><!--Lenk til checkout siden-->
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hovedinholdet-->
+
+    <main>
+
+        <!--Mine Seksjoner-->
+    
+        <!--Seksjon 1(Banner) HUSK Å BYTTE BILDER:-->
+        <section id="slider-banner"> 
+            <div class="banner-container">
+                <article class="slide-banner">
+                    <img src="images/lion-bannerBilde-index.jpg" alt="bannerbildet av to løver"> <!--Husk å legge til bilde bruker lorempicsum for å se om det fungerer-->
+                    <section class="slide-content-banner">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada facilisis elit. Nullam eu feugiat erat. Praesent.</p>
+                        <a href="#" class="les-mer-knapp">Les mer</a>
+                    </section>
+                </article>
+                <article class="slide-banner">
+                    <img src="images/lion-bannerBilde-index.jpg" alt="bannerbildet av to løver"> <!--Husk å legge til bilde bruker lorempicsum for å se om det fungerer-->
+                    <section class="slide-content-banner">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada facilisis elit. Nullam eu feugiat erat. Praesent.</p>
+                        <a href="#" class="les-mer-knapp">Les mer</a>
+                    </section>
+                </article>
+                <article class="slide-banner">
+                    <img src="images/lion-bannerBilde-index.jpg" alt="bannerbildet av to løver"> <!--Husk å legge til bilde bruker lorempicsum for å se om det fungerer-->
+                    <section class="slide-content-banner">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada facilisis elit. Nullam eu feugiat erat. Praesent.</p>
+                        <a href="#" class="les-mer-knapp">Les mer</a>
+                    </section>
+                </article>
+            </div>
+
+        <!--Seksjon 2 (Våre mest populære produkter):-->
+        <section id="produkter">
+            <header class="header-index">
+                <h2>Våre mest populære produkter</h2>
+                <p>Utforsk våre fantastiske produkter</p>
+
+                <nav aria-label="Produktfiltrering">
+                    <ul class="filter-knapper">
+                        <li><button type="button">New Product</button></li>
+                        <li><button type="button">Special Price</button></li>
+                        <li><button type="button">Best Sellers</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="produkt-liste">
+                <article class="produkt-kort">
+                    <img src="images/sko-produktBilde-index.jpg" alt="produkt bilde"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <button class="hjerte-ikon" aria-label="Legg til i favoritter">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <section class="produkt-beskrivelse">
+                        <a href="produkt.html"><h3>Produkt name</h3></a>
+                        <p class="pris">2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </section>
+                </article>
+                <article class="produkt-kort">
+                    <img src="images/sko-produktBilde-index.jpg" alt="produkt bilde"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <button class="hjerte-ikon" aria-label="Legg til i favoritter">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <section class="produkt-beskrivelse">
+                        <a href="produkt.html"><h3>Produkt name</h3></a>
+                        <p class="pris">2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </section>
+                </article>
+                <article class="produkt-kort">
+                    <img src="images/sko-produktBilde-index.jpg" alt="produkt bilde"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <button class="hjerte-ikon" aria-label="Legg til i favoritter">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <section class="produkt-beskrivelse">
+                        <a href="produkt.html"><h3>Produkt name</h3></a>
+                        <p class="pris">2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </section>
+                </article>
+                <article class="produkt-kort">
+                    <img src="images/sko-produktBilde-index.jpg" alt="produkt bilde"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <button class="hjerte-ikon" aria-label="Legg til i favoritter">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <section class="produkt-beskrivelse">
+                        <a href="produkt.html"><h3>Produkt name</h3></a>
+                        <p class="pris">2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </section>
+                </article>
+                <article class="produkt-kort">
+                    <img src="images/sko-produktBilde-index.jpg" alt="produkt bilde"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <button class="hjerte-ikon" aria-label="Legg til i favoritter">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <section class="produkt-beskrivelse">
+                        <a href="produkt.html"><h3>Produkt name</h3></a>
+                        <p class="pris">2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </section>
+                </article>
+                <article class="produkt-kort">
+                    <img src="images/sko-produktBilde-index.jpg" alt="produkt bilde"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <button class="hjerte-ikon" aria-label="Legg til i favoritter">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <section class="produkt-beskrivelse">
+                        <a href="produkt.html"><h3>Produkt name</h3></a>
+                        <p class="pris">2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </section> 
+
+        <!--Seksjon 3 (Våre med populære kategorier):-->
+        <section id="kategorier"> 
+            <header class="header-index">
+                <h2>Kategorier</h2>
+                <p>våre mest populære kategorier</p>
+            </header>
+            <div class="kategori-liste">
+                <ul>
+                    <li class="kategori-1">
+                        <a href="#">
+                        <figure>
+                            <img src="images/kategoribilde-1-index.jpg" alt="kategori bilde 1"><!--husk å legge til bilde og beskrivelse-->
+                            <figcaption>Kategori 1</figcaption>
+                        </figure>
+                        </a>
+                    </li>
+                    <li class="kategori-2">
+                        <a href="#">
+                        <figure>
+                            <img src="images/kategoribilde-2-index.jpg" alt="kategori bilde 2"><!--husk å legge til bilde og beskrivelse-->
+                            <figcaption>Kategori 2</figcaption>
+                        </figure>
+                        </a>
+                    </li>
+                    <li class="kategori-3">
+                        <a href="#">
+                        <figure>
+                            <img src="images/kategoribilde-3-index.jpg" alt="kategori bilde 3"><!--husk å legge til bilde og beskrivelse-->
+                            <figcaption>Kategori 3</figcaption>
+                        </figure>
+                        </a>
+                    </li>
+                    <li class="kategori-4">
+                        <a href="#">
+                        <figure>
+                            <img src="images/kategoribilde-4-index.jpg" alt="kategori bilde 4"><!--husk å legge til bilde og beskrivelse-->
+                            <figcaption>Kategori 4</figcaption>
+                        </figure>
+                        </a>
+                    </li>
+                    <li class="kategori-5">
+                        <a href="#">
+                        <figure>
+                            <img src="images/kategoribilde-5-index.jpg" alt="kategori bilde 5"><!--husk å legge til bilde og beskrivelse-->
+                            <figcaption>Kategori 5</figcaption>
+                        </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </section> 
+
+        <section id="anmeldelser"><!--Seksjon 4 (Anmeldelser):-->
+            <header>
+                <h2>Anmeldelser</h2>
+            </header>
+            <div class="anmeldelse-container">
+                <article class="anmeldelse">
+                    <figure>
+                        <img src="images/profilbilde-slider-index.jpg" alt="profilbilde"> <!--Husk å legge inn bilde av "brukeren" og alt tekst-->
+                    </figure>
+                    <h4>Kari Pedersen</h4>
+                    <p class="anmeldelser-stjerner">
+                        <span class="stjerner" aria-label="4 av 5 stjerner">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        </span>
+                    </p>
+                    <p class="anmelsense-tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et orci a magna congue egestas. Etiam eget venenatis dui, sed.</p>                
+                </article>
+                <article class="anmeldelse">
+                    <figure>
+                        <img src="images/profilbilde-slider-index.jpg" alt="profilbilde"> <!--Husk å legge inn bilde av "brukeren" og alt tekst-->
+                    </figure>
+                    <h4>Kari Pedersen</h4>
+                    <p class="anmeldelser-stjerner">
+                        <span class="stjerner" aria-label="4 av 5 stjerner">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        </span>
+                    </p>
+                    <p class="anmelsense-tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et orci a magna congue egestas. Etiam eget venenatis dui, sed.</p>                
+                </article>
+                <article class="anmeldelse">
+                    <figure>
+                        <img src="images/profilbilde-slider-index.jpg" alt="profilbilde"> <!--Husk å legge inn bilde av "brukeren" og alt tekst-->
+                    </figure>
+                    <h4>Kari Pedersen</h4>
+                    <p class="anmeldelser-stjerner">
+                        <span class="stjerner" aria-label="4 av 5 stjerner">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        </span>
+                    </p>
+                    <p class="anmelsense-tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et orci a magna congue egestas. Etiam eget venenatis dui, sed.</p>                
+                </article>
+                <article class="anmeldelse">
+                    <figure>
+                        <img src="images/profilbilde-slider-index.jpg" alt="profilbilde"> <!--Husk å legge inn bilde av "brukeren" og alt tekst-->
+                    </figure>
+                    <h4>Kari Pedersen</h4>
+                    <p class="anmeldelser-stjerner">
+                        <span class="stjerner" aria-label="4 av 5 stjerner">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        </span>
+                    </p>
+                    <p class="anmelsense-tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et orci a magna congue egestas. Etiam eget venenatis dui, sed.</p>                
+                </article>
+                <article class="anmeldelse">
+                    <figure>
+                        <img src="images/profilbilde-slider-index.jpg" alt="profilbilde"> <!--Husk å legge inn bilde av "brukeren" og alt tekst-->
+                    </figure>
+                    <h4>Kari Pedersen</h4>
+                    <p class="anmeldelser-stjerner">
+                        <span class="stjerner" aria-label="4 av 5 stjerner">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        </span>
+                    </p>
+                    <p class="anmelsense-tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et orci a magna congue egestas. Etiam eget venenatis dui, sed.</p>                
+                </article>
+            </div>
+        </section> 
+    </main>  
+    <!--Footer-->
+    <footer id="kontakt">
+        <!--Seksjon 1: Logo og ingress-->
+         <section class="footer-logo-ingress">
+            <a href="index.html" class="nav-logo"><span>Logo</span></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur ante in egestas feugiat. Integer.</p> <!--Lorem ipsum-->
+         </section>
+         <!--Seksjon 2: Kontakt-->
+         <section class="footer-kontakt">
+            <h3>Kontakt</h3>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i>B R A veien 4, 1783 Halden</p>
+                <p><i class="fas fa-phone"></i>Telefon: +47 123 45 678</p>
+                <p><i class="fas fa-envelope"></i>E-post: <a href="mailto:hiof@student.no">hiof@student.no</a></p>
+                <p><i class="fas fa-clock"></i>Åpningstider: Man-fre 10:00-17:00</p>
+            </address>
+        </section>
+         <!--Seksjon 3: Snarveier-->
+         <section class="footer-snarvei"> <!--Vurder å fjerne section og bare ha nav-->
+            <nav class="footer-nav" aria-label="Footer Snarvei"> <!--les deg opp på aria-label-->
+                <h3>Snarveier</h3>
+                <ul>
+                    <li><a href="#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
+                    <li><a href="#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
+                    <li><a href="#kontakt">Kontakt oss</a></li><!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+                </ul>
+            </nav>
+         </section>
+         <!--Seksjon 4: Sosiale medier se mere -->
+         <section class="footer-some"> 
+            <h3>Følg Oss</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pintreest"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>  
+                </li>
+            </ul>
+         </section>
+    </footer>
+</body>
+</html>
+

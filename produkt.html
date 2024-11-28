@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt</title>
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" >
+    <link href="ikoner/css/brands.css" rel="stylesheet" >
+    <link href="ikoner/css/solid.css" rel="stylesheet" >
+    <link href="ikoner/css/regular.css" rel="stylesheet" >
+    <link rel="stylesheet" href="CSS/style.css"> 
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Hovedmeny"> <!--les deg opp på aria-label-->
+
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">Logo</a>
+            
+            <!-- Navigasjonslenker -->
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
+                <li><a href="index.html#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
+                <li><a href="#kontakt">Kontakt oss</a></li> <!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+            </ul>
+            <!-- Søkeboks -->
+            <form action="#" method="get" class="search-box">
+                <input type="text" name="search" placeholder="Søk...">
+                <button type="submit" aria-label="Søk"><i class="fas fa-search"></i></button>
+            </form>
+            <!-- Ikoner -->
+            <ul class="nav-icons">
+                <li><a href="#" aria-label="Profil"><i class="fas fa-user"></i></a></li>
+                <li><a href="#" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a></li>
+                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li><!--Lenk til checkout siden-->
+            </ul>
+        </nav>
+    </header>
+      <!-- Brødsmulesti -->
+    <nav aria-label="Brødsmulesti">
+        <ol class="breadcrumb-produkt">
+            <li><a href="index.html">Hjem ></a></li>
+            <li><a href="index.html#kategorier">Kategorier ></a></li>
+            <li aria-current="page" class="current-page">Produktnavn</li>
+        </ol>
+    </nav>        
+    
+    <main>
+         <!-- Hovedområde for produktinformasjon og bilder -->
+        <div class="produkt-grid-wrapper">
+            <!-- Produktbilder -->
+            <section class="produkt-bilder">
+                <figure class="stort-bilde">
+                    <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde (stort produktbilde)-->
+                </figure>
+                <ul class="små-bilder">
+                    <li><img src="https://picsum.photos/200/300" alt=""></li><!--Husk å legge til bilde (lite produktbilde)-->
+                    <li><img src="https://picsum.photos/200/300" alt=""></li><!--Husk å legge til bilde (lite produktbilde)-->
+                    <li><img src="https://picsum.photos/200/300" alt=""></li><!--Husk å legge til bilde (lite produktbilde)-->
+                </ul>
+            </section>
+            <!-- Produktinformasjon -->
+            <article class="produkt-info">
+                <h1>Produktnavn</h1>
+                <a class="merke" href="#">Merkenavn</a>
+                <p class="pris">2000 kr inkl. mva</p>
+                <p class="farge">Farge: <span>Grønn</span></p>
+
+                <label for="storrelse"></label> 
+                <select name="størrelse" id="storrelse">
+                    <option value="" disabled selected>Velg størrelse</option> <!--https://www.w3schools.com/tags/att_select_disabled.asp -->
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <div class="button-container">
+                    <button type="button" class="legg-til-handlekurv">Legg i handlekurv</button>
+                    <button type="button" class="lik-produkt" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </article>
+
+            <section class="produkt-ekstra-info">
+                <details>
+                    <summary>Materiale og vedlikehold<i class="fa-solid fa-plus"></i></summary>
+                    <ul>
+                        <li>Overmateriale: 95% viskose 5%elastan</li>
+                        <li>Materiale emner: 100% polyester</li>
+                        <li>Materiale: Jersey</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Produktdetaljer<i class="fa-solid fa-plus"></i></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis metus in orci lobortis convallis. Morbi rhoncus, urna vel ultrices condimentum, felis libero vulputate velit, non iaculis felis arcu a felis. Fusce tincidunt accumsan quam, vel porttitor magna varius eu. Quisque sodales laoreet nulla.</p>
+                </details>
+                <details>
+                    <summary></i>Størrelsestabell<i class="fa-solid fa-plus"></i></summary>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>EU</th>
+                                <th>INT</th>
+                                <th>Brystvidde (cm)</th>
+                                <th>Livvidde (cm)</th>
+                                <th>Hoftevidde (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>36</td>
+                                <td>S</td>
+                                <td>84-88</td>
+                                <td>68-72</td>
+                                <td>92-96</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>M</td>
+                                <td>88-92</td>
+                                <td>72-76</td>
+                                <td>96-100</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>L</td>
+                                <td>92-96</td>
+                                <td>76-80</td>
+                                <td>100-104</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>XL</td>
+                                <td>96-100</td>
+                                <td>80-84</td>
+                                <td>104-108</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+                <details class="anmeldelser-produkt">
+                    <summary>
+                        Anmeldelser<span class="stjerner" aria-label="4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        32</span>
+                    </summary>
+                    <div class="anmeldelse">
+                        <p>Robert labrador</p>
+                        <p>2024-10-02</p>
+                        <span class="stjerner" aria-label="4 av 5 stjerner">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra dignissim pellentesque. Aenean orci sapien, mollis in ipsum sed, bibendum vulputate ante. Sed scelerisque lacus id faucibus luctus. Aliquam erat volutpat. Praesent condimentum iaculis ante, quis commodo ligula lacinia a. Vestibulum pulvinar odio id arcu tincidunt commodo.</p>
+                        </div>
+                </details>
+            </section>
+        </div>
+        <aside id="lignende-produkter">
+            <header>
+                <h2>Lignende Produkter</h2>
+                <a href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
+            </header>
+            <div id="slider">
+                <div class="slides-produkt-liste">
+                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
+                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                        <a href="#"><h3>Produktnavn</h3></a>
+                        <p>2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </article>
+                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
+                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                        <a href="#"><h3>Produktnavn</h3></a>
+                        <p>2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </article>
+                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
+                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                        <a href="#"><h3>Produktnavn</h3></a>
+                        <p>2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </article>
+                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
+                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                        <a href="#"><h3>Produktnavn</h3></a>
+                        <p>2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </article>
+                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
+                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                        <a href="#"><h3>Produktnavn</h3></a>
+                        <p>2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </article>
+                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
+                        <img src="https://picsum.photos/200/300" alt=""><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                        <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
+                        <a href="#"><h3>Produktnavn</h3></a>
+                        <p>2000 kr</p>
+                        <p class="anmeldelser-produkt">
+                            <span class="stjerner" aria-label="4 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                            </span>
+                            <span class="antall-anmeldelser">(679 anmeldelser)</span>
+                        </p>
+                    </article>
+                    
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!--Footer-->
+    <footer id="kontakt">
+        <!--Seksjon 1: Logo og ingress-->
+         <section class="footer-logo-ingress">
+            <a href="index.html" class="nav-logo"><span>Logo</span></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur ante in egestas feugiat. Integer.</p> <!--Lorem ipsum-->
+         </section>
+         <!--Seksjon 2: Kontakt-->
+         <section class="footer-kontakt">
+            <h3>Kontakt</h3>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i>B R A veien 4, 1783 Halden</p>
+                <p><i class="fas fa-phone"></i>Telefon: +47 123 45 678</p>
+                <p><i class="fas fa-envelope"></i>E-post: <a href="mailto:hiof@student.no">hiof@student.no</a></p>
+                <p><i class="fas fa-clock"></i>Åpningstider: Man-fre 10:00-17:00</p>
+            </address>
+        </section>
+         <!--Seksjon 3: Snarveier-->
+         <section class="footer-snarvei"> <!--Vurder å fjerne section og bare ha nav-->
+            <nav class="footer-nav" aria-label="Footer Snarvei"> <!--les deg opp på aria-label-->
+                <h3>Snarveier</h3>
+                <ul>
+                    <li><a href="#">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
+                    <li><a href="#">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
+                    <li><a href="#">Kontakt oss</a></li><!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+                </ul>
+            </nav>
+         </section>
+         <!--Seksjon 4: Sosiale medier se mere -->
+         <section class="footer-some"> 
+            <h3>Følg Oss</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pintreest"><!--les deg opp på aria-label og span-->
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>  
+                </li>
+            </ul>
+         </section>
+    </footer>
+</body>
+</html>
+
