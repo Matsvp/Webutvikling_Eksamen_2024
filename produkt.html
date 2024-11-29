@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="global-header">
-        <nav class="navbar" aria-label="Hovedmeny"> <!--les deg opp på aria-label-->
+        <nav class="navbar" aria-label="Hovedmeny"> 
 
             <!-- Søkeboks -->
             <form action="#" method="get" class="search-box">
@@ -25,27 +25,27 @@
                            
             <!-- Navigasjonslenker -->
             <ul class="nav-links">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
+                <li><a href="index.html" aria-label="Gå til Hjemmesiden">Hjem</a></li>
+                <li><a href="index.html#produkter" aria-label="Gå til Produkter">Produkter</a></li> 
                 <!-- Logo -->
-                <li class="logo"><a href="index.html" class="nav-logo">Logo</a></li>
-                <li><a href="index.html#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
-                <li><a href="#kontakt">Kontakt oss</a></li> <!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+                <li class="logo"><a href="index.html" class="nav-logo" aria-label="Gå til Hjemmesiden">Logo</a></li>
+                <li><a href="index.html#kategorier" aria-label="Gå til Kategorier">Kategorier</a></li> 
+                <li><a href="index.html#kontakt" aria-label="Gå til Kontakt oss">Kontakt oss</a></li> 
             </ul>
 
             <!-- Ikoner -->
             <ul class="nav-icons">
                 <li><a href="#" aria-label="Profil"><i class="fas fa-user"></i></a></li>
                 <li><a href="#" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a></li>
-                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li><!--Lenk til checkout siden-->
+                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
     </header>
       <!-- Brødsmulesti -->
     <nav aria-label="Brødsmulesti">
         <ol class="breadcrumb-produkt">
-            <li><a href="index.html">Hjem ></a></li>
-            <li><a href="index.html#kategorier">Kategorier ></a></li>
+            <li><a href="index.html" aria-label="Gå til Hjem">Hjem ></a></li>
+            <li><a href="index.html#kategorier" aria-label="Gå til Kategorier">Kategorier ></a></li>
             <li aria-current="page" class="current-page">Produktnavn</li>
         </ol>
     </nav>        
@@ -56,23 +56,23 @@
             <!-- Produktbilder -->
             <section class="produkt-bilder">
                 <figure class="stort-bilde">
-                    <img src="images/stortproduktbilde-prodksiden.jpg" alt="stort produktbilde"><!--Husk å legge til bilde (stort produktbilde)-->
+                    <img src="images/stortproduktbilde-prodksiden.jpg" alt="Stor kaktus med gule pigger, vokser på steinete underlag."><!--Bildet er tatt av lapping fra Pixabay-->
                 </figure>
                 <ul class="små-bilder">
-                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="lite produktbilde"></li><!--Husk å legge til bilde (lite produktbilde)-->
-                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="lite produktbilde"></li><!--Husk å legge til bilde (lite produktbilde)-->
-                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="lite produktbilde"></li><!--Husk å legge til bilde (lite produktbilde)-->
+                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="Stor kaktus med gule pigger, vokser på steinete underlag."></li><!--Bildet er tatt av lapping fra Pixabay-->
+                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="Stor kaktus med gule pigger, vokser på steinete underlag."></li><!--Bildet er tatt av lapping fra Pixabay-->
+                    <li><img src="images/liteproduktbilde-produktsiden.jpg" alt="Stor kaktus med gule pigger, vokser på steinete underlag."></li><!--Bildet er tatt av lapping fra Pixabay-->
                 </ul>
             </section>
             <!-- Produktinformasjon -->
             <article class="produkt-info">
                 <h1>Produktnavn</h1>
-                <a class="merke" href="#">Merkenavn</a>
+                <a class="merke" href="#" aria-label="Merkenavn link">Merkenavn</a>
                 <p class="pris">2000 kr inkl. mva</p>
                 <p class="farge">Farge: <span>Grønn</span></p>
 
                 <label for="storrelse"></label> 
-                <select name="størrelse" id="storrelse">
+                <select name="størrelse" id="storrelse" aria-label="Velg størrelse">
                     <option value="" disabled selected>Velg størrelse</option> <!--https://www.w3schools.com/tags/att_select_disabled.asp -->
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
@@ -80,14 +80,14 @@
                     <option value="xl">XL</option>
                 </select>
                 <div class="button-container">
-                    <button type="button" class="legg-til-handlekurv">Legg i handlekurv</button>
+                    <button type="button" class="legg-til-handlekurv" aria-label="Legg til i handlekurv">Legg i handlekurv</button>
                     <button type="button" class="lik-produkt" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </article>
 
             <section class="produkt-ekstra-info">
                 <details>
-                    <summary>Materiale og vedlikehold<i class="fa-solid fa-plus"></i></summary>
+                    <summary aria-label="Materiale og vedlikehold">Materiale og vedlikehold<i class="fa-solid fa-plus"></i></summary>
                     <ul>
                         <li>Overmateriale: 95% viskose 5%elastan</li>
                         <li>Materiale emner: 100% polyester</li>
@@ -95,11 +95,11 @@
                     </ul>
                 </details>
                 <details>
-                    <summary>Produktdetaljer<i class="fa-solid fa-plus"></i></summary>
+                    <summary aria-label="Produktdetaljer">Produktdetaljer<i class="fa-solid fa-plus"></i></summary>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis metus in orci lobortis convallis. Morbi rhoncus, urna vel ultrices condimentum, felis libero vulputate velit, non iaculis felis arcu a felis. Fusce tincidunt accumsan quam, vel porttitor magna varius eu. Quisque sodales laoreet nulla.</p>
                 </details>
                 <details>
-                    <summary>Størrelsestabell<i class="fa-solid fa-plus"></i></summary>
+                    <summary aria-label="Størrelsestabell">Størrelsestabell<i class="fa-solid fa-plus"></i></summary>
                     <table>
                         <thead>
                             <tr>
@@ -143,13 +143,13 @@
                     </table>
                 </details>
                 <details class="anmeldelser-produkt">
-                    <summary>
+                    <summary aria-label="Anmeldelser">
                         Anmeldelser<span class="stjerner" aria-label="4 av 5 stjerner">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                        <i class="fa-regular fa-star"></i>
                         32</span>
                     </summary>
                     <div class="anmeldelse">
@@ -170,14 +170,14 @@
         <aside id="lignende-produkter">
             <header>
                 <h2>Lignende Produkter</h2>
-                <a href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" aria-label="Se flere lignende produkter">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
             </header>
             <div id="slider">
                 <div class="slides-produkt-liste">
-                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <article class="produkt-kort"> 
+                        <img src="images/lingedeproduker-produktsiden.png" alt="En glassvase fylt med vann, med greiner oppi som har grønne og rødlige blader, stående foran en tofarget bakgrunn i blått og beige."><!-- Bildet er tatt av Leighley fra Pixabay-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
-                        <a href="#"><h3>Produktnavn</h3></a>
+                        <a href="#" aria-label="Se Produktnavn"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
                         <p class="anmeldelser-produkt">
                             <span class="stjerner" aria-label="4 av 5 stjerner">
@@ -185,15 +185,15 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                                <i class="fa-regular fa-star"></i>
                             </span>
                             <span class="antall-anmeldelser">(679 anmeldelser)</span>
                         </p>
                     </article>
-                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <article class="produkt-kort"> 
+                        <img src="images/lingedeproduker-produktsiden.png" alt="En glassvase fylt med vann, med greiner oppi som har grønne og rødlige blader, stående foran en tofarget bakgrunn i blått og beige."><!-- Bildet er tatt av Leighley fra Pixabay-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
-                        <a href="#"><h3>Produktnavn</h3></a>
+                        <a href="#" aria-label="Se Produktnavn"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
                         <p class="anmeldelser-produkt">
                             <span class="stjerner" aria-label="4 av 5 stjerner">
@@ -201,15 +201,15 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                                <i class="fa-regular fa-star"></i>
                             </span>
                             <span class="antall-anmeldelser">(679 anmeldelser)</span>
                         </p>
                     </article>
-                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <article class="produkt-kort"> 
+                        <img src="images/lingedeproduker-produktsiden.png" alt="En glassvase fylt med vann, med greiner oppi som har grønne og rødlige blader, stående foran en tofarget bakgrunn i blått og beige."><!-- Bildet er tatt av Leighley fra Pixabay-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
-                        <a href="#"><h3>Produktnavn</h3></a>
+                        <a href="#" aria-label="Se Produktnavn"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
                         <p class="anmeldelser-produkt">
                             <span class="stjerner" aria-label="4 av 5 stjerner">
@@ -217,15 +217,15 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                                <i class="fa-regular fa-star"></i>
                             </span>
                             <span class="antall-anmeldelser">(679 anmeldelser)</span>
                         </p>
                     </article>
-                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <article class="produkt-kort"> 
+                        <img src="images/lingedeproduker-produktsiden.png" alt="En glassvase fylt med vann, med greiner oppi som har grønne og rødlige blader, stående foran en tofarget bakgrunn i blått og beige."><!-- Bildet er tatt av Leighley fra Pixabay-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
-                        <a href="#"><h3>Produktnavn</h3></a>
+                        <a href="#" aria-label="Se Produktnavn"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
                         <p class="anmeldelser-produkt">
                             <span class="stjerner" aria-label="4 av 5 stjerner">
@@ -233,15 +233,15 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                                <i class="fa-regular fa-star"></i>
                             </span>
                             <span class="antall-anmeldelser">(679 anmeldelser)</span>
                         </p>
                     </article>
-                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <article class="produkt-kort"> 
+                        <img src="images/lingedeproduker-produktsiden.png" alt="En glassvase fylt med vann, med greiner oppi som har grønne og rødlige blader, stående foran en tofarget bakgrunn i blått og beige."><!-- Bildet er tatt av Leighley fra Pixabay-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
-                        <a href="#"><h3>Produktnavn</h3></a>
+                        <a href="#" aria-label="Se Produktnavn"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
                         <p class="anmeldelser-produkt">
                             <span class="stjerner" aria-label="4 av 5 stjerner">
@@ -249,15 +249,15 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                                <i class="fa-regular fa-star"></i>
                             </span>
                             <span class="antall-anmeldelser">(679 anmeldelser)</span>
                         </p>
                     </article>
-                    <article class="produkt-kort"> <!--Husk å legge til hjerte ikon i bildet oppe til høyre-->
-                        <img src="images/lingedeproduker-produktsiden.png" alt="lingnede produkt"><!--Husk å legge til bilde som er for pc og forklaring (største bildet)-->
+                    <article class="produkt-kort"> 
+                        <img src="images/lingedeproduker-produktsiden.png" alt="En glassvase fylt med vann, med greiner oppi som har grønne og rødlige blader, stående foran en tofarget bakgrunn i blått og beige."><!--Bildet er tatt av Leighley fra Pixabay-->
                         <button class="lik-produkt-lignede-produkter" aria-label="Legg til i ønskeliste"><i class="fa-regular fa-heart"></i></button>
-                        <a href="#"><h3>Produktnavn</h3></a>
+                        <a href="#" aria-label="Se Produktnavn"><h3>Produktnavn</h3></a>
                         <p>2000 kr</p>
                         <p class="anmeldelser-produkt">
                             <span class="stjerner" aria-label="4 av 5 stjerner">
@@ -265,7 +265,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i><!--Ble full stjerne, må se mere på-->
+                                <i class="fa-regular fa-star"></i>
                             </span>
                             <span class="antall-anmeldelser">(679 anmeldelser)</span>
                         </p>
@@ -293,13 +293,13 @@
             </address>
         </section>
          <!--Seksjon 3: Snarveier-->
-         <section class="footer-snarvei"> <!--Vurder å fjerne section og bare ha nav-->
-            <nav class="footer-nav" aria-label="Footer Snarvei"> <!--les deg opp på aria-label-->
+         <section class="footer-snarvei"> 
+            <nav class="footer-nav" aria-label="Footer Snarvei">
                 <h3>Snarveier</h3>
                 <ul>
-                    <li><a href="#">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
-                    <li><a href="#">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
-                    <li><a href="#">Kontakt oss</a></li><!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+                    <li><a href="index.html#produkter">Produkter</a></li> 
+                    <li><a href="index.html#kategorier">Kategorier</a></li> 
+                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
             </nav>
          </section>
@@ -308,22 +308,22 @@
             <h3>Følg Oss</h3>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
                         <i class="fab fa-instagram"></i> 
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pintreest"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pintreest">
                         <i class="fab fa-pinterest-p"></i>
                     </a>  
                 </li>

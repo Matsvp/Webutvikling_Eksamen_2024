@@ -12,65 +12,62 @@
 </head>
 <body>
     <header>
-        <nav class="navbar" aria-label="Hovedmeny"> <!--les deg opp på aria-label-->
+        <nav class="navbar" aria-label="Hovedmeny"> 
 
             <!-- Søkeboks -->
-            <form action="#" method="get" class="search-box">
-                <input type="text" name="search" placeholder="Søk...">
+            <form action="#" method="get" class="search-box" aria-label="Søkeboks">
+                <input type="text" name="search" placeholder="Søk..." aria-label="Søk etter produkter">
                 <button type="submit" aria-label="Søk"><i class="fas fa-search"></i></button>
             </form>
             
-            
-                           
             <!-- Navigasjonslenker -->
-            <ul class="nav-links">
+            <ul class="nav-links" aria-label="Navigasjonslenker">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
-                <!-- Logo -->
-                <li class="logo"><a href="index.html" class="nav-logo">Logo</a></li>
-                <li><a href="#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
-                <li><a href="#kontakt">Kontakt oss</a></li> <!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+                <li><a href="#produkter">Produkter</a></li> 
+                <li class="logo"><a href="index.html" class="nav-logo" aria-label="Gå til hjem">Logo</a></li>
+                <li><a href="#kategorier">Kategorier</a></li> 
+                <li><a href="#kontakt">Kontakt oss</a></li> 
             </ul>
 
             <!-- Ikoner -->
-            <ul class="nav-icons">
+            <ul class="nav-icons" aria-label="Navigasjonsikoner">
                 <li><a href="#" aria-label="Profil"><i class="fas fa-user"></i></a></li>
                 <li><a href="#" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a></li>
-                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li><!--Lenk til checkout siden-->
+                <li><a href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <nav>
-            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a>
+        <nav aria-label="Navigasjon tilbake">
+            <a href="index.html" class="back-link" aria-label="Fortsett og handle"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a>
         </nav>
-        <h1 id="Kasse">Kasse</h1> <!--husk brødsmulesti-->
+        <h1 id="Kasse">Kasse</h1> 
 
         <!--Shopping bagg-->
-        <div class="handlekurv-container">
-            <section id="handlekurv">
+        <div class="handlekurv-container" aria-label="Handlekurv">
+            <section id="handlekurv" aria-label="Din Handlekurv">
                 <h2>Din Handlekurv</h2>
-                <article class="produkt-kort-checkout">
+                <article class="produkt-kort-checkout" aria-label="Produktkort for Produktnavn 1">
                     <figure>
-                        <img src="images/produktbilde-kassesiden.jpg" alt="Produktbilde 1">
+                        <img src="images/produktbilde-kassesiden.jpg" alt="En grønn potteplante, med en merkelapp, plassert på en betongkant i et drivhusmiljø."> <!--Bildet er tatt av Veronica Bosley fra Pixabay-->
                         <figcaption>
                             <h3>Produktnavn 1</h3>
                             <p>Farge Grønn</p>
                             <p>Pris 2000 kr</p>
                             <label for="storelse1">Størrelse:</label>
-                            <select name="storelse1" id="storelse1">
+                            <select name="storelse1" id="storelse1" aria-label="Velg størrelse for Produktnavn 1">
                                 <option value="S">S</option>
                                 <option value="M">M</option>
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
                             <label for="antall1">Antall:</label>
-                            <input type="number" id="antall1" name="antall1" value="1" min="1">
-                            <nav class="knapp-gruppe">
-                                <button class="slett-produkt" aria-label="Fjern produkt">
+                            <input type="number" id="antall1" name="antall1" value="1" min="1" aria-label="Velg antall for Produktnavn 1">
+                            <nav class="knapp-gruppe" aria-label="Produktknapper for Produktnavn 1">
+                                <button class="slett-produkt" aria-label="Fjern produkt Produktnavn 1">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
-                                <button class="lik-produkt" aria-label="Lik produkt">
+                                <button class="lik-produkt" aria-label="Lik produkt Produktnavn 1">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
                             </nav>
@@ -78,27 +75,27 @@
                     </figure>
                 </article>
 
-                <article class="produkt-kort-checkout">
+                <article class="produkt-kort-checkout" aria-label="Produktkort for Produktnavn 2">
                     <figure>
-                        <img src="images/produktbilde-kassesiden.jpg" alt="Produktbilde 2">
+                        <img src="images/produktbilde-kassesiden.jpg" alt="En grønn potteplante, med en merkelapp, plassert på en betongkant i et drivhusmiljø."> <!--Bildet er tatt av Veronica Bosley fra Pixabay-->
                         <figcaption>
                             <h3>Produktnavn 2</h3>
                             <p>Farge Grønn</p>
                             <p>Pris 2000 kr</p>
                             <label for="storelse2">Størrelse:</label>
-                            <select name="storelse2" id="storelse2">
+                            <select name="storelse2" id="storelse2" aria-label="Velg størrelse for Produktnavn 2">
                                 <option value="S">S</option>
                                 <option value="M">M</option>
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
                             <label for="antall1">Antall:</label>
-                            <input type="number" id="antall2" name="antall2" value="1" min="1">
-                            <nav class="knapp-gruppe">
-                                <button class="slett-produkt" aria-label="Fjern produkt">
+                            <input type="number" id="antall2" name="antall2" value="1" min="1"  aria-label="Velg antall for Produktnavn 2">
+                            <nav class="knapp-gruppe" aria-label="Produktknapper for Produktnavn 2">
+                                <button class="slett-produkt" aria-label="Fjern produkt for Produktnavn 2">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
-                                <button class="lik-produkt" aria-label="Lik produkt">
+                                <button class="lik-produkt" aria-label="Lik produkt Produktnavn 1">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
                             </nav>
@@ -106,27 +103,27 @@
                     </figure>
                 </article>
 
-                <article class="produkt-kort-checkout">
+                <article class="produkt-kort-checkout" aria-label="Produktkort for Produktnavn 3">
                     <figure>
-                        <img src="images/produktbilde-kassesiden.jpg" alt="Produktbilde 3">
+                        <img src="images/produktbilde-kassesiden.jpg" alt="En grønn potteplante, med en merkelapp, plassert på en betongkant i et drivhusmiljø."> <!--Bildet er tatt av Veronica Bosley fra Pixabay-->
                         <figcaption>
                             <h3>Produktnavn 3</h3>
                             <p>Farge Grønn</p>
                             <p>Pris 2000 kr</p>
                             <label for="storelse3">Størrelse:</label>
-                            <select name="storelse3" id="storelse3">
+                            <select name="storelse3" id="storelse3" aria-label="Velg størrelse for Produktnavn 3">
                                 <option value="S">S</option>
                                 <option value="M">M</option>
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
-                            <label for="antall1">Antall:</label>
-                            <input type="number" id="antall3" name="antall3" value="1" min="1">
-                            <nav class="knapp-gruppe">
-                                <button class="slett-produkt" aria-label="Fjern produkt">
+                            <label for="antall3">Antall:</label>
+                            <input type="number" id="antall3" name="antall3" value="1" min="1" aria-label="Velg antall for Produktnavn 3">
+                            <nav class="knapp-gruppe" aria-label="Produktknapper for Produktnavn 3">
+                                <button class="slett-produkt" aria-label="Fjern produkt Produktnavn 3">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
-                                <button class="lik-produkt" aria-label="Lik produkt">
+                                <button class="lik-produkt" aria-label="Lik produkt Produktnavn 3">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
                             </nav>
@@ -136,45 +133,43 @@
             </section>
         </div>
 
-        <section id="personoplysninger">
-            
-            
-            <form action="#" method="post">
-                <h2>Dine oplysninger</h2>
+        <section id="personoplysninger" aria-label="Personopplysninger">
+            <form action="#" method="post" aria-label="Personlig informasjon">
+                <h2>Dine opplysninger</h2>
                 <h3>Leveringsadresse</h3>
 
                 <fieldset class="input-grupe fornavn">
                     <label for="fornavn">Fornavn:</label>
-                    <input type="text" id="fornavn" name="fornavn" required>
+                    <input type="text" id="fornavn" name="fornavn" placeholder="Per" required aria-label="Skriv inn fornavn">
                 </fieldset>
                 <fieldset class="input-grupe etternav">
                     <label for="etternavn">Etternavn:</label>
-                    <input type="text" id="etternavn" name="etternavn" required>
+                    <input type="text" id="etternavn" name="etternavn" placeholder="Hansen" required aria-label="Skriv inn etternavn">
                 </fieldset>
                 <fieldset class="input-grupe adresse">
                     <label for="adresse">Gatenavn:</label>
-                    <input type="text" id="adresse" name="adresse" required>
+                    <input type="text" id="adresse" name="adresse" placeholder="Torvgata 2" required aria-label="Skriv inn gatenavn">
                 </fieldset>
                 <fieldset class="input-grupe postnummer">
                     <label for="postnummer">Postnummer:</label>
-                    <input type="text" id="postnummer" name="postnummer" required pattern="\d{4}">
+                    <input type="text" id="postnummer" name="postnummer" placeholder="1788" required pattern="[0-9]{4}" aria-label="Skriv inn postnummer"> <!--https://stackoverflow.com/questions/23676778/what-html5-form-attribute-should-be-used-for-a-zipcode#:~:text=You%20can%20use%20simply%20%3Clabel%3EZIP%20Code%3C%2Flabel%3E%20%3Cinput%20type%3D%22text%22,country%20different%20schemes%20for%20zip%20codes%20are%20used%21-->
                 </fieldset>
                 <fieldset class="input-grupe poststed">
                     <label for="poststed">Poststed:</label>
-                    <input type="text" id="poststed" name="poststed" required>
+                    <input type="text" id="poststed" name="poststed" placeholder="Halden" required aria-label="Skriv inn poststed">
                 </fieldset>
                 <h3>Kontaktinformasjon</h3>
                 <fieldset class="input-grupe email">
                     <label for="email">E-post</label>
-                    <input type="email" name="email" id="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    <input type="email" name="email" id="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required aria-label="Skriv inn e-postadresse"><!--https://www.w3schools.com/TAGS/att_input_pattern.asp-->
                 </fieldset>
                 <fieldset class="input-grupe telefon">
                     <label for="telefon">Telefon</label>
-                    <input type="tel" id="telefon" name="telefon" placeholder="999 88 777" pattern="[0-9]{8,12}" required>
+                    <input type="tel" id="telefon" name="telefon" placeholder="999 88 777" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required aria-label="Skriv inn telefonnummer">  <!--https://www.w3schools.com/Tags/att_input_type_tel.asp-->
                 </fieldset>
                 <fieldset class="knapper-input">
-                    <button type="submit">Lagre</button>
-                    <button type="reset">Avbryt</button>
+                    <button type="submit" aria-label="Lagre informasjon">Lagre</button>
+                    <button type="reset" aria-label="Avbryt">Avbryt</button>
                 </fieldset>
             </form>
         </section>
@@ -213,15 +208,15 @@
                 <div class="betaling-grid">
                     <fieldset class="kortnummer-field">
                         <label for="kortnummer">Kortnummer:</label>
-                        <input type="text" id="kortnummer" inputmode="numeric" placeholder="1234 5678 9012 3456" pattern="\d{13,16}" required>
+                        <input type="text" id="kortnummer" inputmode="numeric" placeholder="1234 5678 9012 3456" pattern="[0-9\s]{13,19}" required> <!--https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers-->
                     </fieldset>
                     <fieldset class="utlopsdato-field">
                         <label for="utlopsdato">Utløpsdato</label>
-                        <input type="text" name="utlopsdato" id="utlopsdato" placeholder="MM/YY" pattern="\d{2}/\d{2}" required>
+                        <input type="text" name="utlopsdato" id="utlopsdato" placeholder="MM/YY" pattern="(?:0[1-9]|1[0-2])/[0-9]{2}" required> <!--https://stackoverflow.com/questions/45456328/html5-pattern-for-cc-expiry-mm-yy-->
                     </fieldset>
                     <fieldset class="cvc-field">
                         <label for="cvc">CVC/CVV</label>
-                        <input type="text" id="cvc" name="cvc" inputmode="numeric" placeholder="123" pattern="\d{3,4}" required>
+                        <input type="text" id="cvc" name="cvc" inputmode="numeric" placeholder="123" pattern="([0-9]|[0-9]|[0-9])" required><!--https://stackoverflow.com/questions/35054229/custom-validation-in-html5-for-numbers-cvc-cvv-->
                     </fieldset>
                 </div>
                 <p class="totalt-betaling">Totalt å betale: 1199 kr</p>
@@ -245,7 +240,7 @@
     <footer id="kontakt">
         <!--Seksjon 1: Logo og ingress-->
          <section class="footer-logo-ingress">
-            <a href="index.html" class="nav-logo"><span>Logo</span></a>
+            <a href="index.html" class="nav-logo" aria-label="Gå til hjem"><span>Logo</span></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur ante in egestas feugiat. Integer.</p> <!--Lorem ipsum-->
          </section>
          <!--Seksjon 2: Kontakt-->
@@ -259,37 +254,37 @@
             </address>
         </section>
          <!--Seksjon 3: Snarveier-->
-         <section class="footer-snarvei"> <!--Vurder å fjerne section og bare ha nav-->
-            <nav class="footer-nav" aria-label="Footer Snarvei"> <!--les deg opp på aria-label-->
+         <section class="footer-snarvei"> 
+            <nav class="footer-nav" aria-label="Footer Snarvei"> 
                 <h3>Snarveier</h3>
                 <ul>
-                    <li><a href="#produkter">Produkter</a></li> <!--Lenk slik at den går ned til podukter når du har laget seksjoen-->
-                    <li><a href="#kategorier">Kategorier</a></li> <!--Lenk slik at den går ned til kategorier når du har laget seksjoen-->
-                    <li><a href="#kontakt">Kontakt oss</a></li><!--Lenk slik at den går ned til footer (kontakt oss) når du har laget seksjoen-->
+                    <li><a href="#produkter">Produkter</a></li> 
+                    <li><a href="#kategorier">Kategorier</a></li> 
+                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
             </nav>
          </section>
          <!--Seksjon 4: Sosiale medier se mere -->
-         <section class="footer-some"> 
+         <section class="footer-some" aria-label="Sosiale medier"> 
             <h3>Følg Oss</h3>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
                         <i class="fab fa-instagram"></i> 
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pintreest"><!--les deg opp på aria-label og span-->
+                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pintreest">
                         <i class="fab fa-pinterest-p"></i>
                     </a>  
                 </li>

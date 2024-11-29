@@ -1770,7 +1770,7 @@ nav{
 .produkt-kort a{
     color: #000;
     font-size: 1.2rem;
-    font-size: bold;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -1789,7 +1789,7 @@ nav{
     color: #555;
 }
 
-@media (min-width: 600) {
+@media (min-width: 600px) {
     .produkt-kort {
         flex: 0 0 calc(50% - 1rem); 
     }
@@ -1798,6 +1798,6 @@ nav{
 /* Desktop Layout (min-width: 1024px) */
 @media (min-width: 1024px) {
     .produkt-kort {
-        flex: 0 0 calc(33.% - 1rem); 
+        flex: 0 0 calc(33% - 1rem); 
     }
 }
