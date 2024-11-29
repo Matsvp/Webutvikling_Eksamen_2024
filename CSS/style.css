@@ -445,7 +445,7 @@ li.logo{
     margin-bottom: 20px;
     width:100%;
     max-width: 350px;
-    flex: 1 1 calc(100% - 20px);
+    flex: 1 1 calc(100% - 20px); 
 }
 
 
@@ -541,7 +541,7 @@ li.logo{
     }
 }
 
-/*kategorier må se mere på gridet, ligger ikke slik som jeg vil*/ 
+/*kategorier */
 
 #kategorier{
     text-align: center;
@@ -684,7 +684,7 @@ li.logo{
     scroll-snap-align: start;
     background-color:  #f9f9f9;
     padding: 20px;
-    border: 1px solid #000; /*se hvorfor det kommer error*/
+    border: 1px solid #000; 
     border-radius: 10px;
     box-sizing: border-box;
     text-align: left;  
@@ -768,7 +768,6 @@ li.logo{
     }
 }
 
-/*index siden uten mediaquers*/
 
 /*checkoutsiden*/
 /*brødsmulesti*/
@@ -930,7 +929,7 @@ nav{
 
 
 
-/* Styling for personoplysninger-seksjonen Husk å rette på slik at knappene ligger under hverandre */
+/* Styling for personoplysninger-seksjonen */
 
 #personoplysninger {
     width: 100%;
